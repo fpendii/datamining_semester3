@@ -1,0 +1,265 @@
+CRITICAL - 2023-12-26 00:03:37 --> Cannot use object of type App\Models\DatasetModel as array
+in APPPATH\Controllers\Identifikasi.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Identifikasi->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Identifikasi))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 00:05:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\identifikasi.php on line 34.
+ 1 APPPATH\Views\identifikasi.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Identifikasi.php(24): view('identifikasi')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Identifikasi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Identifikasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 00:07:22 --> Invalid file: "identifikasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('identifikasi.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 3 APPPATH\Controllers\Identifikasi.php(24): view('identifikasi')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Identifikasi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Identifikasi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+INFO - 2023-12-26 05:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-26 05:05:48 --> Undefined variable: tepal_length
+in APPPATH\Views\identifikasi.php on line 41.
+ 1 APPPATH\Views\identifikasi.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tepal_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 05:11:59 --> Undefined index: sepal_length
+in APPPATH\Views\identifikasi.php on line 12.
+ 1 APPPATH\Views\identifikasi.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sepal_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 05:13:19 --> Undefined index: max_ptl
+in APPPATH\Views\identifikasi.php on line 12.
+ 1 APPPATH\Views\identifikasi.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: max_ptl', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 05:14:20 --> Undefined index: max_ptl
+in APPPATH\Views\identifikasi.php on line 12.
+ 1 APPPATH\Views\identifikasi.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: max_ptl', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 05:14:33 --> Cannot use object of type stdClass as array
+in APPPATH\Views\identifikasi.php on line 12.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 4 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 05:14:43 --> Undefined index: max_ptl
+in APPPATH\Views\identifikasi.php on line 12.
+ 1 APPPATH\Views\identifikasi.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: max_ptl', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+ERROR - 2023-12-26 14:38:06 --> mysqli_sql_exception: Unknown column 'tepal_length' in 'field list' in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `dataset...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dataset...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dataset...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset...', Array, false)
+#4 C:\xampp\htdocs\k-nn\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\k-nn\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-26 14:38:06 --> Unknown column 'tepal_length' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset`.`iddataset`, `dataset`.`sepal_length`, `dataset`.`sepal_width`, `tepal_length`, `tepal_width`, `kelas`.`kelas`, `jenisdata`.`jenis`
+FROM `dataset`
+JOIN `kelas` ON `kelas`.`idkelas` = `dataset`.`idkelas`
+JOIN `jenisdata` ON `jenisdata`.`idjenis` = `dataset`.`idjenis`
+WHERE `jenisdata`.`idjenis` = :jenisdata.idjenis:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+ERROR - 2023-12-26 14:38:59 --> mysqli_sql_exception: Unknown column 'tepal_length' in 'field list' in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT MAX(sepa...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(sepa...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(sepa...')
+#3 C:\xampp\htdocs\k-nn\system\Model.php(867): CodeIgniter\Database\BaseConnection->query('SELECT MAX(sepa...')
+#4 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(51): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(25): App\Models\DatasetModel->getMaxMin()
+#6 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-26 14:38:59 --> Unknown column 'tepal_length' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Model.php(867): CodeIgniter\Database\BaseConnection->query('SELECT MAX(sepal_length) AS max_spl, MIN(sepal_length) AS min_spl, MAX(sepal_width) AS max_spw, MIN(sepal_width) AS min_spw, MAX(tepal_length) AS max_ptl, MIN(tepal_length) AS min_ptl, MAX(tepal_width) AS max_ptw, MIN(tepal_width) AS min_ptw FROM dataset WHERE idjenis = 1')
+ 2 APPPATH\Models\DatasetModel.php(51): CodeIgniter\Model->__call('query', [...])
+ 3 APPPATH\Controllers\Home.php(25): App\Models\DatasetModel->getMaxMin()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+ERROR - 2023-12-26 14:39:27 --> mysqli_sql_exception: Unknown column 'tepal_length' in 'field list' in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT MAX(sepa...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(sepa...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(sepa...')
+#3 C:\xampp\htdocs\k-nn\system\Model.php(867): CodeIgniter\Database\BaseConnection->query('SELECT MAX(sepa...')
+#4 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(51): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(25): App\Models\DatasetModel->getMaxMin()
+#6 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-26 14:39:27 --> Unknown column 'tepal_length' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Model.php(867): CodeIgniter\Database\BaseConnection->query('SELECT MAX(sepal_length) AS max_spl, MIN(sepal_length) AS min_spl, MAX(sepal_width) AS max_spw, MIN(sepal_width) AS min_spw, MAX(tepal_length) AS max_ptl, MIN(tepal_length) AS min_ptl, MAX(tepal_width) AS max_ptw, MIN(tepal_width) AS min_ptw FROM dataset WHERE idjenis = 1')
+ 2 APPPATH\Models\DatasetModel.php(51): CodeIgniter\Model->__call('query', [...])
+ 3 APPPATH\Controllers\Home.php(25): App\Models\DatasetModel->getMaxMin()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 14:40:13 --> Undefined index: tepal_length
+in APPPATH\Views\identifikasi.php on line 7.
+ 1 APPPATH\Views\identifikasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tepal_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 14:41:06 --> Undefined index: tepal_length
+in APPPATH\Views\identifikasi.php on line 72.
+ 1 APPPATH\Views\identifikasi.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tepal_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 72, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 14:49:14 --> Undefined variable: tepal_length
+in APPPATH\Views\identifikasi.php on line 27.
+ 1 APPPATH\Views\identifikasi.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tepal_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 14:49:59 --> Undefined variable: tepal_length
+in APPPATH\Views\identifikasi.php on line 99.
+ 1 APPPATH\Views\identifikasi.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tepal_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 14:50:22 --> Undefined variable: tepal_length
+in APPPATH\Views\identifikasi.php on line 99.
+ 1 APPPATH\Views\identifikasi.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tepal_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 14:50:30 --> Undefined variable: min_
+in APPPATH\Views\identifikasi.php on line 37.
+ 1 APPPATH\Views\identifikasi.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: min_', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-26 14:55:04 --> Undefined variable: normal_spl
+in APPPATH\Views\identifikasi.php on line 43.
+ 1 APPPATH\Views\identifikasi.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: normal_spl', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 43, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('identifikasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')

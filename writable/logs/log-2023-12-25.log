@@ -1,0 +1,302 @@
+INFO - 2023-12-25 11:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 11:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-25 11:54:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`k-nn`.`dataset`, CONSTRAINT `dataset_ibfk_2` FOREIGN KEY (`idjenis`) REFERENCES `jenisdata` (`idjenis`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\k-nn\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\k-nn\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\k-nn\app\Controllers\TambahDataController.php(39): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+#10 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-25 11:54:15 --> Cannot add or update a child row: a foreign key constraint fails (`k-nn`.`dataset`, CONSTRAINT `dataset_ibfk_2` FOREIGN KEY (`idjenis`) REFERENCES `jenisdata` (`idjenis`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` (`idkelas`, `sepal_length`, `sepal_width`, `tepal_length`, `tepal_width`)
+VALUES (2,5,5,5,5)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\TambahDataController.php(39): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+INFO - 2023-12-25 11:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-25 11:55:16 --> mysqli_sql_exception: Unknown column 'jeniskelas' in 'field list' in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(50): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\k-nn\app\Controllers\TambahDataController.php(39): App\Models\DatasetModel->insertData(Array)
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-25 11:55:16 --> Unknown column 'jeniskelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` (`idkelas`, `jeniskelas`, `sepal_length`, `sepal_width`, `tepal_length`, `tepal_width`)
+VALUES (2,2,5,5,5,5)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\DatasetModel.php(50): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\TambahDataController.php(39): App\Models\DatasetModel->insertData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+INFO - 2023-12-25 12:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-25 12:12:03 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->knn()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-25 12:28:32 --> Undefined index: tepal_lenght
+in APPPATH\Controllers\Home.php on line 25.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tepal_lenght', 'C:\\xampp\\htdocs\\k-nn\\app\\Controllers\\Home.php', 25, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+ERROR - 2023-12-25 12:30:47 --> mysqli_sql_exception: Column 'idjenis' in where clause is ambiguous in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `dataset...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dataset...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dataset...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset...', Array, false)
+#4 C:\xampp\htdocs\k-nn\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\k-nn\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-25 12:30:47 --> Column 'idjenis' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset`.`iddataset`, `dataset`.`sepal_length`, `dataset`.`sepal_width`, `tepal_length`, `tepal_width`, `kelas`.`kelas`, `jenisdata`.`jenis`
+FROM `dataset`
+JOIN `kelas` ON `kelas`.`idkelas` = `dataset`.`idkelas`
+JOIN `jenisdata` ON `jenisdata`.`idjenis` = `dataset`.`idjenis`
+WHERE `idjenis` = :idjenis:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-25 12:45:27 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResult
+in APPPATH\Models\DatasetModel.php on line 51.
+ 1 APPPATH\Models\DatasetModel.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResult', 'C:\\xampp\\htdocs\\k-nn\\app\\Models\\DatasetModel.php', 51, [])
+ 2 APPPATH\Controllers\Home.php(26): App\Models\DatasetModel->getMaxMin()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-25 12:46:40 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+in APPPATH\Models\DatasetModel.php on line 52.
+ 1 APPPATH\Controllers\Home.php(26): App\Models\DatasetModel->getMaxMin()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-25 12:46:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Models\DatasetModel.php on line 52.
+ 1 APPPATH\Controllers\Home.php(26): App\Models\DatasetModel->getMaxMin()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-25 12:49:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+in APPPATH\Models\DatasetModel.php on line 52.
+ 1 APPPATH\Controllers\Home.php(26): App\Models\DatasetModel->getMaxMin()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+CRITICAL - 2023-12-25 12:50:26 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Home.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+INFO - 2023-12-25 22:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 22:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 22:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 22:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 22:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 22:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-25 22:59:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1)
+VALUES ('2','2'), ('2','2'), ('2','2'), ('2','2'), ('1','1'), ('1','1')' at line 1 in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(56): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\k-nn\app\Controllers\TambahDataController.php(29): App\Models\DatasetModel->insertData(Array)
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-25 22:59:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1)
+VALUES ('2','2'), ('2','2'), ('2','2'), ('2','2'), ('1','1'), ('1','1')' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` (0, 1)
+VALUES (\'2\',\'2\'), (\'2\',\'2\'), (\'2\',\'2\'), (\'2\',\'2\'), (\'1\',\'1\'), (\'1\',\'1\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\DatasetModel.php(56): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\TambahDataController.php(29): App\Models\DatasetModel->insertData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+INFO - 2023-12-25 22:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 22:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-25 23:00:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1)
+VALUES ('2','2'), ('2','2'), ('2','2'), ('2','2'), ('1','1'), ('1','1')' at line 1 in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(56): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\k-nn\app\Controllers\TambahDataController.php(29): App\Models\DatasetModel->insertData(Array)
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-25 23:00:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1)
+VALUES ('2','2'), ('2','2'), ('2','2'), ('2','2'), ('1','1'), ('1','1')' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` (0, 1)
+VALUES (\'2\',\'2\'), (\'2\',\'2\'), (\'2\',\'2\'), (\'2\',\'2\'), (\'1\',\'1\'), (\'1\',\'1\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\DatasetModel.php(56): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\TambahDataController.php(29): App\Models\DatasetModel->insertData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+ERROR - 2023-12-25 23:00:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`k-nn`.`dataset`, CONSTRAINT `dataset_ibfk_1` FOREIGN KEY (`idkelas`) REFERENCES `kelas` (`idkelas`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\k-nn\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\k-nn\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\k-nn\app\Controllers\TambahDataController.php(29): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+#10 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-25 23:00:19 --> Cannot add or update a child row: a foreign key constraint fails (`k-nn`.`dataset`, CONSTRAINT `dataset_ibfk_1` FOREIGN KEY (`idkelas`) REFERENCES `kelas` (`idkelas`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` ()
+VALUES (), (), (), (), (), ()', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\TambahDataController.php(29): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+ERROR - 2023-12-25 23:00:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1)
+VALUES ('2','2'), ('2','2'), ('2','2'), ('2','2'), ('1','1'), ('1','1')' at line 1 in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(56): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\k-nn\app\Controllers\TambahDataController.php(29): App\Models\DatasetModel->insertData(Array)
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-25 23:00:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1)
+VALUES ('2','2'), ('2','2'), ('2','2'), ('2','2'), ('1','1'), ('1','1')' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` (0, 1)
+VALUES (\'2\',\'2\'), (\'2\',\'2\'), (\'2\',\'2\'), (\'2\',\'2\'), (\'1\',\'1\'), (\'1\',\'1\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\DatasetModel.php(56): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\TambahDataController.php(29): App\Models\DatasetModel->insertData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TambahDataController->TambahData()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahDataController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+INFO - 2023-12-25 23:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-25 23:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-25 23:56:59 --> Undefined variable: sepa_length
+in APPPATH\Views\identifikasi.php on line 24.
+ 1 APPPATH\Views\identifikasi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sepa_length', 'C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\k-nn\\app\\Views\\identifikasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('identifikasi', [], true)
+ 5 APPPATH\Controllers\Identifikasi.php(19): view('identifikasi')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Identifikasi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Identifikasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')

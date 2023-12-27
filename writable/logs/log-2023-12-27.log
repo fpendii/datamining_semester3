@@ -1,0 +1,106 @@
+ERROR - 2023-12-27 02:56:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'datamining_knn', 3306, '', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset...', Array, false)
+#4 C:\xampp\htdocs\k-nn\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\k-nn\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset...', Array, false)
+#3 C:\xampp\htdocs\k-nn\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\k-nn\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-27 02:56:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset`.`iddataset`, `dataset`.`sepal_length`, `dataset`.`sepal_width`, `petal_length`, `petal_width`, `kelas`.`kelas`, `jenisdata`.`jenis`
+FROM `dataset`
+JOIN `kelas` ON `kelas`.`idkelas` = `dataset`.`idkelas`
+JOIN `jenisdata` ON `jenisdata`.`idjenis` = `dataset`.`idjenis`
+WHERE `jenisdata`.`idjenis` = :jenisdata.idjenis:', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
+ERROR - 2023-12-27 02:57:27 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'datamining_knn', 3306, '', 0)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset...', Array, false)
+#4 C:\xampp\htdocs\k-nn\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\k-nn\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\k-nn\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\k-nn\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\k-nn\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset...', Array, false)
+#3 C:\xampp\htdocs\k-nn\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\k-nn\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\k-nn\app\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\k-nn\app\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+#7 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\k-nn\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\k-nn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\k-nn\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-27 02:57:27 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dataset`.`iddataset`, `dataset`.`sepal_length`, `dataset`.`sepal_width`, `petal_length`, `petal_width`, `kelas`.`kelas`, `jenisdata`.`jenis`
+FROM `dataset`
+JOIN `kelas` ON `kelas`.`idkelas` = `dataset`.`idkelas`
+JOIN `jenisdata` ON `jenisdata`.`idjenis` = `dataset`.`idjenis`
+WHERE `jenisdata`.`idjenis` = :jenisdata.idjenis:', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\DatasetModel.php(47): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(24): App\Models\DatasetModel->getDataWithKelass()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\k-nn\\public\\index.php')
